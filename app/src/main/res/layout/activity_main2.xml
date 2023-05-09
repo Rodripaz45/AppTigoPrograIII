@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPlanes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="monospace"
+                android:text="PLANES TIGO"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/degrade"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgCasaIncial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/casa" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtInicial"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="5dp"
+                            android:minHeight="48dp"
+                            android:text="PLAN TIGO HOGAR INICIAL"
+                            android:textColor="#000000"
+                            android:textIsSelectable="true"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/txtContenidoInicial"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:elegantTextHeight="true"
+                            android:fontFamily="monospace"
+                            android:text="- 56 canales SD - 40 MBPS de velocidad - Megas Ilimitados y SMS ilimitados"
+                            android:textColor="#000000"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elegantTextHeight="true"
+                            android:fontFamily="monospace"
+                            android:paddingLeft="150dp"
+                            android:text="Costo : 370.0 BS"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnPlanIncial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elegir este plan"
+                android:layout_gravity="center"
+                android:background="@drawable/degrade"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/degrade"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="188dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/casa"
+                        tools:ignore="DuplicateIds" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="5dp"
+                            android:minHeight="48dp"
+                            android:text="PLAN TIGO HOGAR INTERMEDIO"
+                            android:textColor="#000000"
+                            android:textIsSelectable="true"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            tools:ignore="DuplicateIds,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:elegantTextHeight="true"
+                            android:fontFamily="monospace"
+                            android:text="- 102 canales SD - Tigo Sports HD app y canal - 80 MBPS de velocidad - Megas ilimitados, SMS ilimitados y 80 minutos en tu linea Tigo"
+                            android:textColor="#000000"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            tools:ignore="DuplicateIds,TextSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoText="false"
+                            android:elegantTextHeight="true"
+                            android:fontFamily="monospace"
+                            android:freezesText="false"
+                            android:paddingLeft="150dp"
+                            android:text="Costo : 430.0 BS"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnPlanIntermedio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elegir este plan"
+                android:layout_gravity="center"
+                android:background="@drawable/degrade"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/degrade"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="188dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/casa"
+                        tools:ignore="DuplicateIds" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:layout_marginLeft="5dp"
+                            android:elegantTextHeight="true"
+                            android:minHeight="48dp"
+                            android:text="PLAN TIGO HOGAR AVANZADO"
+                            android:textColor="#000000"
+                            android:textIsSelectable="true"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            tools:ignore="DuplicateIds,TouchTargetSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:elegantTextHeight="true"
+                            android:fontFamily="monospace"
+                            android:text="- 115 canales SD - Tigo Sports HD app y canal y 78 canales (One Tv App) - 120 MBPS de velocidad - Megas ilimitados, SMS ilimitados y 110 minutos en tu linea Tigo"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:textStyle="bold"
+                            tools:ignore="DuplicateIds,TextSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elegantTextHeight="true"
+                            android:fontFamily="monospace"
+                            android:paddingLeft="150dp"
+                            android:text="Costo : 520.0 BS"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnPlanTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elegir este plan"
+                android:layout_gravity="center"
+                android:background="@drawable/degrade"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
